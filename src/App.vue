@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Hi there!"/>
-    <button @click="toggleMessage">Clique aqui</button>
-    <p v-if="showMessage">Aqui vai alguma feature maravilhosa</p>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Hi there"/>
   </div>
 </template>
 
@@ -13,16 +12,6 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  },
-  data() {
-    return {
-      showMessage: false
-    }
-  },
-  methods: {
-    toggleMessage() {
-      this.showMessage = !this.showMessage;
-    }
   }
 }
 </script>
@@ -33,7 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #065cb3;
+  color: #2c3e50;
   margin-top: 60px;
 }
 </style>
