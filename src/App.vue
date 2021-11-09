@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <HelloWorld msg="Hi there!"/>
+    <button @click="toggleMessage">Clique aqui</button>
+    <p v-if="showMessage">Aqui vai alguma feature maravilhosa</p>
   </div>
 </template>
 
@@ -11,6 +13,16 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      showMessage: false
+    }
+  },
+  methods: {
+    toggleMessage() {
+      this.showMessage = !this.showMessage;
+    }
   }
 }
 </script>
