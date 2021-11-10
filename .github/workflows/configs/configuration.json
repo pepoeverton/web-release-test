@@ -1,5 +1,6 @@
 {
-  "pr_template": "- ${{TITLE}} (#${{NUMBER}} by ${{AUTHOR}})",
+  "pr_template": "- ${{TITLE}} (#${{NUMBER}} by @${{AUTHOR}})",
+  "empty_template": "- no changes 😞",
   "categories": [
     {
       "title": "## 🚀 Features",
