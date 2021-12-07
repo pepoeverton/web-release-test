@@ -24,5 +24,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
+          omitPrereleaseDuringUpdate: true
           body: ${{steps.github_release.outputs.changelog}}
           token: ${{ secrets.GITHUB_TOKEN }}
