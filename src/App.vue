@@ -2,7 +2,7 @@
   <div id="app">
     <HelloWorld msg="Hi there!"/>
     <button @click="toggleMessage">Clique aqui</button>
-    <p v-if="showMessage">Aqui vai alguma feature maravilhosa</p>
+    <p v-if="showMessage">Olá pessoas, tudo bem???</p>
   </div>
 </template>
 
