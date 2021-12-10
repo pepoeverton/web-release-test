@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Hi there!"/>
-    <button @click="toggleMessage">Clique aqui!!!</button>
-    <p v-if="showMessage">Aqui vai alguma feature maravilhosa</p>
+    <HelloWorld msg="Olá, tudo bem?"/>
+    <button @click="toggleMessage">Clique aqui</button>
+    <p v-if="showMessage">Aqui vai alguma feature!!!</p>
   </div>
 </template>
 
