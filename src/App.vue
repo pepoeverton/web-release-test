@@ -1,30 +1,30 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Olá, tudo bem?"/>
-    <button @click="toggleMessage">Clique aqui!!!</button>
-    <p v-if="showMessage">Aqui vai alguma feature!!!</p>
+    <HelloWorld msg="Olá, tudo bem?" />
+    <button @click="toggleMessage">Clique aqui</button>
+    <p v-if="showMessage">Aqui vai alguma feature!</p>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
   },
   data() {
     return {
-      showMessage: false
-    }
+      showMessage: false,
+    };
   },
   methods: {
     toggleMessage() {
       this.showMessage = !this.showMessage;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style>
